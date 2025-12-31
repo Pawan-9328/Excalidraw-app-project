@@ -20,7 +20,8 @@
     "@repo/typescript-config": "workspace:*",
     "@types/node": "^22.0.0",
     "@types/ws": "^8.18.1",
-    "typescript": "^5.0.0"
+    "typescript": "^5.0.0",
+    "@repo/backend-common" : "workspace:*"
   },
   "keywords": [],
   "author": "",

@@ -1,7 +1,7 @@
 import express from "express";
 import jwt from "jsonwebtoken";
-import { JWT_SECRET } from "./config";
-
+import {JWT_SECRET} from '@repo/backend-common/config'
+import { middleware } from "./middleware.js";
 const app = express();
 
 
@@ -27,7 +27,7 @@ app.post("/signin", (req, res) => {
   })
 })
 
-app.post("/room", (req, res) => {
+app.post("/room", middleware, (req, res) => {
   //db call 
   res.json({
     roomId: 123
